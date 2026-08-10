@@ -133,9 +133,12 @@ body {
 .slide { flex: 0 0 100%; }
 .slide img { width: 100%; height: 400px; object-fit: cover; }
 
+/* Pergeseran posisi slide (1 sampai 5) */
 #slide1:checked ~ .slides { transform: translateX(0%); }
 #slide2:checked ~ .slides { transform: translateX(-100%); }
 #slide3:checked ~ .slides { transform: translateX(-200%); }
+#slide4:checked ~ .slides { transform: translateX(-300%); }
+#slide5:checked ~ .slides { transform: translateX(-400%); }
 
 .navigation {
   position: absolute;
@@ -145,9 +148,17 @@ body {
   display: none;
   justify-content: space-between;
   padding: 0 20px;
+  pointer-events: none; /* Mencegah area transparan menutupi elemen lain */
 }
 
-#slide1:checked ~ .nav1, #slide2:checked ~ .nav2, #slide3:checked ~ .nav3 { display: flex; }
+/* Menampilkan navigasi sesuai slide yang aktif (1 sampai 5) */
+#slide1:checked ~ .nav1, 
+#slide2:checked ~ .nav2, 
+#slide3:checked ~ .nav3,
+#slide4:checked ~ .nav4,
+#slide5:checked ~ .nav5 { 
+  display: flex; 
+}
 
 .navigation label {
   width: 45px; height: 45px;
@@ -155,6 +166,8 @@ body {
   color: white; border-radius: 50%;
   display: flex; justify-content: center; align-items: center;
   cursor: pointer; font-size: 20px;
+  pointer-events: auto; /* Mengaktifkan klik hanya pada tombol panah */
+  user-select: none;
 }
 
 /* ================= VISI & MISI ================= */
