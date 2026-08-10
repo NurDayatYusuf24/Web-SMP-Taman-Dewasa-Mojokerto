@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - SMP Tamansiswa Mojokerto</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR NAVIGASI -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo Sekolah" class="logo-img" />
+        <a href="index.html" class="logo">SMP TAMANSISWA MOJOKERTO</a>
+      </div>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+      <label for="menu-toggle" class="toggle-button" aria-label="Toggle Navigation">&#9776;</label>
+
+      <div class="navbar-links">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pendaftaran.html">Pendaftaran</a></li>
+          <li><a href="testimoni.html">Testimoni</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CAROUSEL PROMOSI SMP -->
+  <div class="carousel">
+    <input type="radio" name="slider" id="slide1" checked />
+    <input type="radio" name="slider" id="slide2" />
+    <input type="radio" name="slider" id="slide3" />
+
+    <div class="slides">
+      <div class="slide"><img src="gambar1.jpg" alt="Promosi 1" /></div>
+      <div class="slide"><img src="gambar2.jpg" alt="Promosi 2" /></div>
+      <div class="slide"><img src="gambar3.jpg" alt="Promosi 3" /></div>
+    </div>
+
+    <div class="navigation nav1">
+      <label for="slide3" class="prev">&#10094;</label>
+      <label for="slide2" class="next">&#10095;</label>
+    </div>
+    <div class="navigation nav2">
+      <label for="slide1" class="prev">&#10094;</label>
+      <label for="slide3" class="next">&#10095;</label>
+    </div>
+    <div class="navigation nav3">
+      <label for="slide2" class="prev">&#10094;</label>
+      <label for="slide1" class="next">&#10095;</label>
+    </div>
+  </div>
+
+  <!-- VISI SMP -->
+  <section class="visi-section">
+    <div class="visi-header">
+      <span class="visi-badge">Visi Sekolah</span>
+      <h2>Visi Pendidikan</h2>
+    </div>
+    <p class="visi-text">
+      "BERJIWA MERDEKA, BERBUDI PEKERTI LUHUR, DAN BERBUDAYA LINGKUNGAN."
+    </p>
+  </section>
+
+  <!-- MISI SMP -->
+  <section class="misi-section">
+    <div class="misi-header">
+      <h2>Misi Pendidikan</h2>
+    </div>
+    <div class="misi-grid">
+      <div class="misi-card">
+        <div class="misi-number">01</div>
+        <p>Menyelenggarakan pembelajaran yang menumbuhkan kemandirian dan keberanian siswa.</p>
+      </div>
+      <div class="misi-card">
+        <div class="misi-number">02</div>
+        <p>Mengembangkan kreativitas, kolaborasi, dan inovasi berbasis IPTEK.</p>
+      </div>
+      <div class="misi-card">
+        <div class="misi-number">03</div>
+        <p>Menyediakan pembelajaran berkualitas agar siswa mencapai prestasi akademik dan non-akademik.</p>
+      </div>
+      <div class="misi-card">
+        <div class="misi-number">04</div>
+        <p>Menumbuhkan kepercayaan diri siswa dalam berargumentasi dan mengambil keputusan.</p>
+      </div>
+      <div class="misi-card">
+        <div class="misi-number">05</div>
+        <p>Menyelenggarakan pembelajaran yang membiasakan murid berpikir kritis dan tanggap terhadap perkembangan IPTEK.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATISTIKA -->
+  <section id="statistik" class="container">
+    <h2>Statistika Sekolah</h2>
+    <div class="stat-grid">
+      <div class="card">
+        <h3>Jumlah Lulusan</h3>
+        <div class="number">3.250+</div>
+      </div>
+      <div class="card">
+        <h3>Jumlah Siswa Saat Ini</h3>
+        <div class="number">1.450</div>
+      </div>
+      <div class="card">
+        <h3>Jumlah Guru</h3>
+        <div class="number">45</div>
+      </div>
+      <div class="card">
+        <h3>Jumlah Staf</h3>
+        <div class="number">12</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAROUSEL 5 KEGIATAN TERBARU -->
+  <section class="kegiatan-terbaru-section container">
+    <h2 style="text-align: center; color: #1e3a8a; margin: 40px 0 20px;">Carousel 5 Kegiatan Terbaru</h2>
+    <div class="kegiatan-grid">
+      <div class="kegiatan-card">
+        <img src="kegiatan1.jpg" alt="Senam Bersama">
+        <h3>1. Senam Bersama</h3>
+      </div>
+      <div class="kegiatan-card">
+        <img src="kegiatan2.jpg" alt="Pramuka">
+        <h3>2. Kegiatan Pramuka</h3>
+      </div>
+      <div class="kegiatan-card">
+        <img src="kegiatan3.jpg" alt="Lab Komputer">
+        <h3>3. Praktikum Komputer</h3>
+      </div>
+      <div class="kegiatan-card">
+        <img src="kegiatan4.jpg" alt="Ziarah">
+        <h3>4. Ziarah Ki Hadjar Dewantara</h3>
+      </div>
+      <div class="kegiatan-card">
+        <img src="kegiatan5.jpg" alt="Pentas Seni">
+        <h3>5. Pentas Seni Budaya</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ (5 PERTANYAAN) -->
+  <section class="faq-section">
+    <h1>FAQ (5 Pertanyaan)</h1>
+    <div class="faq-item">
+      <h2>1. Bagaimana mendaftar?</h2>
+      <p>Pendaftaran dapat dilakukan secara online melalui menu Pendaftaran di website ini atau datang langsung ke ruang panitia SPMB di sekolah.</p>
+    </div>
+    <div class="faq-item">
+      <h2>2. Apakah bisa membayar dicicil?</h2>
+      <p>Ya, pihak sekolah menyediakan skema pembayaran bertahap/cicilan untuk meringankan biaya orang tua siswa.</p>
+    </div>
+    <div class="faq-item">
+      <h2>3. Apakah ada tes masuk?</h2>
+      <p>Ada tes pemetaan minat dan potensi diri (bukan tes gugur) untuk membantu pengelompokan bakat belajar siswa.</p>
+    </div>
+    <div class="faq-item">
+      <h2>4. Berapa lama proses verifikasi berkas?</h2>
+      <p>Verifikasi berkas fisik maupun online memerlukan waktu rata-rata 1-2 hari kerja.</p>
+    </div>
+    <div class="faq-item">
+      <h2>5. Bagaimana kurikulum yang diterapkan?</h2>
+      <p>SMP Tamansiswa menerapkan Kurikulum Merdeka yang dipadukan dengan nilai-nilai ketamansiswaan (character building).</p>
+    </div>
+  </section>
+
+ <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Link ke Sosial Media</h3>
+        <div class="social-buttons">
+          <a href="#" class="facebook">📘 Facebook</a>
+          <a href="https://www.instagram.com/smp_tamansiswa_mojokerto/" class="instagram" target="_blank">📷 Instagram</a>
+          <a href="#" class="tiktok">🎵 TikTok</a>
+          <a href="https://www.youtube.com/@smp_tamansiswa_mojokerto" class="youtube" target="_blank">▶ YouTube</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Informasi Kontak</h3>
+        <p><strong>Alamat:</strong> Jl. Tamansiswa No. 30, Magersari, Mojokerto.</p>
+        <p><strong>Waktu Buka:</strong> Senin - Jumat (06.30 - 15.00 WIB)</p>
+      </div>
+      <div class="footer-col">
+        <h3>Tautan Akademik</h3>
+        <a href="daftar-guru.html">Daftar Guru</a>
+        <a href="daftar-staf.html">Daftar Staf</a>
+        <a href="kurikulum.html">Kurikulum</a>
+        <a href="kalender-akademik.html">Kalender Akademik</a>
+      </div>
+      <div class="footer-col">
+        <h3>Fasilitas & Prestasi</h3>
+        <a href="sarana-prasarana.html">Daftar Sarana Prasarana</a>
+        <a href="ekstrakurikuler.html">Ekstrakurikuler</a>
+        <a href="daftar-prestasi.html">Daftar Prestasi</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 SMP Tamansiswa Mojokerto.
+    </div>
+  </footer>
+
+</body>
+</html>
